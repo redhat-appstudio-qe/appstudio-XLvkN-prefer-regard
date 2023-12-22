@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-oozc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-depl-leaz-tenant/appstudio/dc-metro-map-oozc@sha256:82f873125862ef3300abea21ce4ba5f0c41651d0ecc1cd95f91c5bc439a65a5b
+        name: my-nodejs
+        resources: {}
+status: {}
